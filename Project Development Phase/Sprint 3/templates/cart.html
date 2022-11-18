@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart - RedStore</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    
+    <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png" width="80"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <!-- <li><a href =""><b>Home </b>&nbsp;&#x2616;</a></li> -->
+                    <li><a href ="/product"><b>All Products </b>&nbsp;&#x2692;</a></li>
+                    <li><a href =""><b>About us </b>&nbsp;&#x2709;</a></li>
+                    <li><a href =""><b>Contact us </b>&nbsp;&#x2706;</a></li>
+                    <li><a href ="/account"><b>Account </b>&nbsp;&#x2752;</a></li>
+                </ul>
+            </nav>
+            <a href="/cart"></a><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/cart.png" width="30px" height="30px">
+            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/menuu.png" class="menu-icon"
+            onclick="menutoggle()">
+            </div>
+        </div>
+<!-----card items details------> 
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product4.jpg">
+                    <div>
+                        <p>Zoook Bomber Wired Optical Mouse
+                            <br>(USB 2.0, Black)</p>
+                        <small>Price : ₹499.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹499.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl1.jpg">
+                    <div>
+                        <p>Echo Dot (4th Gen) with clock | Next generation smart speaker & Alexa (Blue)</p>
+                        <small>Price : ₹4,999.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹4,999.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl6.jpg">
+                    <div>
+                        <p>SAMSUNG Galaxy S22 Ultra, 256GB, 8K Camera & Video, <br>S Pen, Fast 4nm Processor, Phantom White</p>
+                        <small>Price : ₹1,33,599.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹1,33,599.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹499.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹13.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹512.00</td>
+            </tr>
+        </table>
+    </div>
+</div>       
+
+
+<!-- ---------- footer ---------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Application</h3>
+                <p>Download for both Android and iOS</p>
+                <div class="app-logo">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/playstore.png">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/ims.png">
+                <p>Our Purpose is To Sustainably Make the Pleasure and Benefits of All Accessories.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Coupons</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2020 - Easy Tutorials</p>
+    </div>
+</div>
+<!-- ------------------- js for toggle menu --------------- -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight="0px")
+        {
+            MenuItems.style.maxHeight="200px" ;
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "87ad3502-2685-48d1-bbdd-96ed7b353f93", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "26b5b847-d411-43f0-af69-4cd200aed370", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>

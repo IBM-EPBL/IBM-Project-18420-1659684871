@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details - KGSPStore</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    
+    <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png" width="80"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <!-- <li><a href =""><b>Home </b>&nbsp;&#x2616;</a></li> -->
+                    <li><a href ="/product"><b>All Products </b>&nbsp;&#x2692;</a></li>
+                    <li><a href =""><b>About us </b>&nbsp;&#x2709;</a></li>
+                    <li><a href =""><b>Contact us </b>&nbsp;&#x2706;</a></li>
+                    <li><a href ="/account"><b>Account </b>&nbsp;&#x2752;</a></li>
+                </ul>
+            </nav>
+            <a href="/cart"></a><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/cart.png" width="30px" height="30px">
+            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/menuu.png" class="menu-icon"
+            onclick="menutoggle()">
+            </div>
+        </div>
+
+        <!-- -------------- single product details -------------- -->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product5.webp" width="70%" id="ProductImg">
+                    
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/side4.jpg" width="70%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product5.webp" width="50%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/side5.jpg" width="70%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/side6.jpg" width="70%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Apple Watch</p>
+                    <h1>Apple Watch Series 8 (GPS, 41mm) - Midnight Aluminium Case</h1>
+                    <h4>₹33,199.00</h4>
+                    <select>
+                        <option>Select Color</option>
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>red</option>
+                        <option>White</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="/cart" class="btn">Add To Cart</a>
+                    <h3>Product Details <i class="fa fa-indent" ></i></h3>
+                    <br>
+                    <p>Apple Watch Series 8 has an innovative new sensor that tracks your temperature while you sleep, so you can see changes over time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------title----------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+
+<!-------------products------------>
+   <div class="small-container">
+    
+        <div class="row">
+            <div class="col-4"><br><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl1.jpg">
+                <h4><br><br>Echo Dot (4th Gen) with clock | Next generation smart speaker & Alexa (Blue)</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹4,999</p>
+            </div>
+            <div class="col-4"><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl2.jpg">
+                <h4><br><br>AUN Projector for Home 4K, High Brightness Full HD Projector Native 1080p 
+                    | 2.4G/5G WiFi Bluetooth | Android Apps Airplay/h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹23,478</p>
+            </div>
+            <div class="col-4"><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl3.jpg">
+                <h4><br>OhO Video Sunglasses, 32GB 1080 HD Video Recording Camera for 1.5 Hours 
+                    Video Recording Time with Built in 15MP Camera</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹13,062</p>
+            </div>
+            <div class="col-4">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl4.jpg">
+                <h4>Robotic Vacuum, Smart Dynamic Navigation 2.0, Wi-Fi, Boundary Strips (G30 Hybrid) - Black</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>₹12,300</p>  
+            </div>
+        </div>
+        
+        </div>
+       </div>
+    </div>
+   </div>
+<!-- ---------- footer ---------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Application</h3>
+                <p>Download for both Android and iOS</p>
+                <div class="app-logo">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/playstore.png">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/ims.png">
+                <p>Our Purpose is To Sustainably Make the Pleasure and Benefits of All Accessories.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Coupons</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2020 - Easy Tutorials</p>
+    </div>
+</div>
+<!-- ------------------- js for toggle menu --------------- -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight="0px")
+        {
+            MenuItems.style.maxHeight="200px" ;
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+<!------------ js for product gallery -------------->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "87ad3502-2685-48d1-bbdd-96ed7b353f93", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "26b5b847-d411-43f0-af69-4cd200aed370", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>

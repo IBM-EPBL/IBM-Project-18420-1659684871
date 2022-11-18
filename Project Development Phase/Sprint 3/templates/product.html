@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - KGSP Store</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    
+    <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png" width="80"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <!-- <li><a href =""><b>Home </b>&nbsp;&#x2616;</a></li> -->
+                    <li><a href ="/product"><b>All Products </b>&nbsp;&#x2692;</a></li>
+                    <li><a href =""><b>About us </b>&nbsp;&#x2709;</a></li>
+                    <li><a href =""><b>Contact us </b>&nbsp;&#x2706;</a></li>
+                    <li><a href ="/account"><b>Account </b>&nbsp;&#x2752;</a></li>
+                </ul>
+            </nav>
+            <a href="/cart"></a><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/cart.png" width="30px" height="30px">
+            <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/menuu.png" class="menu-icon"
+            onclick="menutoggle()">
+            </div>
+        </div>
+
+   <div class="small-container">
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+            <option>Default Shorting</option>
+            <option>Short by price</option>
+            <option>Short by popularity</option>
+            <option>Short by rating</option>
+            <option>Short by sale</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="/productdetails"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product4.jpg"></a>
+            <a href="/productdetails"><h4><br>Zoook Bomber Wired Optical Mouse  (USB 2.0, Black)</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>₹499</p>
+        </div>
+        <div class="col-4">
+            <a href="/productdetails1"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product5.webp"></a>
+            <a href="/productdetails1"><h4><br>Apple Watch Series 8 (GPS, 41mm) - Midnight Aluminium Case</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>₹33,199</p>
+        </div>
+        <div class="col-4">
+            <a href="/productdetails2"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product6.jpg"><br><br></a>
+            <a href="/productdetails2"><h4><br><br><br>GeForce GV-N710D3-2GL 2GB Graphics Card (Black)</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>₹3,989</p>
+        </div>
+        <div class="col-4">
+            <a href="/productdetails3"><img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/product7.webp"><br><br><br></a>
+            <a href="/productdetails3"><h4><br><br>VR Glasses (Smart Glasses Black For Mobile)</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o" ></i>
+                <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹1,390</p>  
+        </div>
+        <div class="row">
+            <div class="col-4"><br><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl1.jpg">
+                <h4><br><br>Echo Dot (4th Gen) with clock | Next generation smart speaker & Alexa (Blue)</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹4,999</p>
+            </div>
+            <div class="col-4"><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl2.jpg">
+                <h4><br><br>AUN Projector for Home 4K, High Brightness Full HD Projector Native 1080p 
+                    | 2.4G/5G WiFi Bluetooth | Android Apps Airplay/h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹23,478</p>
+            </div>
+            <div class="col-4"><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl3.jpg">
+                <h4><br>OhO Video Sunglasses, 32GB 1080 HD Video Recording Camera for 1.5 Hours 
+                    Video Recording Time with Built in 15MP Camera</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹13,062</p>
+            </div>
+            <div class="col-4">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl4.jpg">
+                <h4>Robotic Vacuum, Smart Dynamic Navigation 2.0, Wi-Fi, Boundary Strips (G30 Hybrid) - Black</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>₹12,300</p>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl5.jpg">
+                <h4><br>MI Xiaomi Wireless Home Security Camera 2i 2022 Edition | Full HD Picture | 360° View | 2MP (White)</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹3,499</p>
+            </div>
+            <div class="col-4"><br><br><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl6.jpg">
+                <h4><br><br><br><br>SAMSUNG Galaxy S22 Ultra, 256GB, 8K Camera & Video,
+                     Brightest Display Screen, S Pen, Fast 4nm Processor, Phantom White</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹1,33,599</p>
+            </div>
+            <div class="col-4"><br><br><br><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl7.png">
+                <h4><br><br><br>SAMSUNG 43" M70B Series 4K UHD USB-C Smart Monitor & Streaming TV,
+                     4ms, 60Hz, HDR10 (Black)</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>₹5,500</p>
+            </div>
+            <div class="col-4"><br>
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/productl8.jpg">
+                <h4>Oral B Vitality 100 Black Criss Cross Electric Rechargeable Toothbrush Powered by Braun</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>₹1,359</p>  
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+       </div>
+    </div>
+   </div>
+<!-- ---------- footer ---------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Application</h3>
+                <p>Download for both Android and iOS</p>
+                <div class="app-logo">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/playstore.png">
+                    <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://kiran.buffer.s3.jp-tok.cloud-object-storage.appdomain.cloud/ims.png">
+                <p>Our Purpose is To Sustainably Make the Pleasure and Benefits of All Accessories.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Coupons</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2020 - Easy Tutorials</p>
+    </div>
+</div>
+<!-- ------------------- js for toggle menu --------------- -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight="0px")
+        {
+            MenuItems.style.maxHeight="200px" ;
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "87ad3502-2685-48d1-bbdd-96ed7b353f93", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "26b5b847-d411-43f0-af69-4cd200aed370", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
